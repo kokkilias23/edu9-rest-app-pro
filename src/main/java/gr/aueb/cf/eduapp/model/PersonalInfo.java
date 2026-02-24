@@ -1,6 +1,5 @@
 package gr.aueb.cf.eduapp.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -39,7 +38,7 @@ public class PersonalInfo extends AbstractEntity {
         this.amkaFile = attachment;
     }
 
-    public void remloveAmkaFile() {
+    public void removeAmkaFile() {
         this.amkaFile = null;
     }
 }

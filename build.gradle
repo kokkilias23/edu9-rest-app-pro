@@ -39,6 +39,6 @@ dependencies {
     implementation 'org.flywaydb:flyway-mysql'
 }
 
-tasks.named('test') {
+tasks.named('test', Test) {
 	useJUnitPlatform()
 }

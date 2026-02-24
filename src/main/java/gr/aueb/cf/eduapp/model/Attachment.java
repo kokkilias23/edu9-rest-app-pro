@@ -19,12 +19,12 @@ public class Attachment extends AbstractEntity {
     private Long id;
 
     @Column(nullable = false)
-    private String fileName;
+    private String filename;
 
     @Column(name = "saved_name", unique = true, nullable = false)
     private String savedName;
 
-    @Column(name = "fo;e_path", nullable = false, length = 1024)
+    @Column(name = "file_path", nullable = false, length = 1024)
     private String filePath;
 
     @Column(name = "content_type", nullable = false)
