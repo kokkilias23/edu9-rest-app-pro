@@ -1,4 +1,4 @@
-package gr.aueb.cf.schoolapp.model;
+package gr.aueb.cf.eduapp.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -35,6 +35,9 @@ public class User extends AbstractEntity implements UserDetails {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
+
+    @OneToOne(mappedBy = "user", fetch = FetchType.LAZY)
+    private Teacher teacher;
 
     public User(String username, String password) {
         this.username = username;

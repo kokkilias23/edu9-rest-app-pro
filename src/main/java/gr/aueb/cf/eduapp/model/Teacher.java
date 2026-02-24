@@ -1,6 +1,6 @@
-package gr.aueb.cf.schoolapp.model;
+package gr.aueb.cf.eduapp.model;
 
-import gr.aueb.cf.schoolapp.model.static_data.Region;
+import gr.aueb.cf.eduapp.model.static_data.Region;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -34,6 +34,10 @@ public class Teacher extends AbstractEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "region_id")
     private Region region;
+
+    @OneToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "user_id", nullable = false, unique = true)
+    private User user;
 
     @PrePersist
     public void initializeUUID() {
