@@ -1,6 +1,5 @@
 package gr.aueb.cf.eduapp.api;
 
-
 import gr.aueb.cf.eduapp.authentication.AuthenticationService;
 import gr.aueb.cf.eduapp.dto.AuthenticationRequestDTO;
 import gr.aueb.cf.eduapp.dto.AuthenticationResponseDTO;
