@@ -62,7 +62,7 @@ public class TeacherServiceImpl implements ITeacherService {
     private String uploadDir;
 
     @Override
-    @Transactional(rollbackFor = { EntityAlreadyExistsException.class, EntityInvalidArgumentException.class} )
+    @Transactional(rollbackFor = { EntityAlreadyExistsException.class, EntityInvalidArgumentException.class } )
     public TeacherReadOnlyDTO saveTeacher(TeacherInsertDTO dto)
             throws EntityAlreadyExistsException, EntityInvalidArgumentException {
 
@@ -115,6 +115,7 @@ public class TeacherServiceImpl implements ITeacherService {
     public boolean isTeacherExists(String vat) {
         return teacherRepository.findByVat(vat).isPresent();
     }
+
 
     @Override
     @PreAuthorize("hasAuthority('VIEW_TEACHERS')")
