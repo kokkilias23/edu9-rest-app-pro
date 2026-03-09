@@ -77,5 +77,7 @@ public class TeacherRestController {
         return ResponseEntity.ok(teacherReadOnlyDTO);
     }
 
+    public ResponseEntity
+
 
 }
