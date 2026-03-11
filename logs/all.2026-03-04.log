@@ -1,0 +1,176 @@
+2026-03-04 19:15:14 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-04 19:15:14 INFO  gr.aueb.cf.eduapp.EduAppApplication - Starting EduAppApplication using Java 21.0.8 with PID 16696 (C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main started by user in C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro)
+ 2026-03-04 19:15:14 INFO  gr.aueb.cf.eduapp.EduAppApplication - The following 1 profile is active: "dev"
+ 2026-03-04 19:15:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-04 19:15:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 7 JPA repository interfaces.
+ 2026-03-04 19:15:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-04 19:15:16 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1580 ms
+ 2026-03-04 19:15:17 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/schoolapp9csrpro?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-04 19:15:17 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.042s)
+ 2026-03-04 19:15:17 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `schoolapp9csrpro`: 4
+ 2026-03-04 19:15:17 INFO  o.f.core.internal.command.DbMigrate - Schema `schoolapp9csrpro` is up to date. No migration necessary.
+ 2026-03-04 19:15:17 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+ 2026-03-04 19:15:17 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-04 19:15:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-04 19:15:17 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-04 19:15:19 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-04 19:15:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-04 19:15:19 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2026-03-04 19:15:19 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2026-03-04 19:15:19 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherRestController' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\api\TeacherRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherServiceImpl': Injection of autowired dependencies failed
+ 2026-03-04 19:15:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-04 19:15:19 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'teacherRestController' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\api\TeacherRestController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'teacherServiceImpl': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'teacherServiceImpl': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'file.upload.dir' in value "${file.upload.dir}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+2026-03-04 19:17:02 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-04 19:17:02 INFO  gr.aueb.cf.eduapp.EduAppApplication - Starting EduAppApplication using Java 21.0.8 with PID 24084 (C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main started by user in C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro)
+ 2026-03-04 19:17:02 INFO  gr.aueb.cf.eduapp.EduAppApplication - The following 1 profile is active: "dev"
+ 2026-03-04 19:17:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-04 19:17:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 7 JPA repository interfaces.
+ 2026-03-04 19:17:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-04 19:17:04 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1400 ms
+ 2026-03-04 19:17:04 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/schoolapp9csrpro?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-04 19:17:04 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.029s)
+ 2026-03-04 19:17:04 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `schoolapp9csrpro`: 4
+ 2026-03-04 19:17:04 INFO  o.f.core.internal.command.DbMigrate - Schema `schoolapp9csrpro` is up to date. No migration necessary.
+ 2026-03-04 19:17:04 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+ 2026-03-04 19:17:04 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-04 19:17:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-04 19:17:05 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-04 19:17:06 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-04 19:17:06 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-04 19:17:06 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2026-03-04 19:17:06 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2026-03-04 19:17:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-03-04 19:17:07 INFO  gr.aueb.cf.eduapp.EduAppApplication - Started EduAppApplication in 5.467 seconds (process running for 5.787)
+ 2026-03-04 19:18:33 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-03-04 19:18:33 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+ 2026-03-04 19:18:33 WARN  g.a.c.e.s.CustomAuthenticationEntryPoint - User not authenticated, with message=Full authentication is required to access this resource
+ 2026-03-04 19:19:21 WARN  g.a.c.e.s.CustomAuthenticationEntryPoint - User not authenticated, with message=Full authentication is required to access this resource
+ 2026-03-04 19:20:43 WARN  g.a.c.e.s.CustomAuthenticationEntryPoint - User not authenticated, with message=Full authentication is required to access this resource
+ 2026-03-04 19:23:26 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-04 19:23:26 INFO  gr.aueb.cf.eduapp.EduAppApplication - Starting EduAppApplication using Java 21.0.8 with PID 29796 (C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main started by user in C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro)
+ 2026-03-04 19:23:26 INFO  gr.aueb.cf.eduapp.EduAppApplication - The following 1 profile is active: "dev"
+ 2026-03-04 19:23:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-04 19:23:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 7 JPA repository interfaces.
+ 2026-03-04 19:23:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-04 19:23:28 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1418 ms
+ 2026-03-04 19:23:30 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\authentication\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in gr.aueb.cf.eduapp.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+ 2026-03-04 19:23:30 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+ 2026-03-04 19:23:30 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\authentication\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in gr.aueb.cf.eduapp.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\authentication\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in gr.aueb.cf.eduapp.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in gr.aueb.cf.eduapp.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'user9'@'localhost' (using password: YES)
+-----------------------------------------------------------------------------------------------------------
+SQL State  : 28000
+Error Code : 1045
+Message    : Access denied for user 'user9'@'localhost' (using password: YES)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'user9'@'localhost' (using password: YES)
+-----------------------------------------------------------------------------------------------------------
+SQL State  : 28000
+Error Code : 1045
+Message    : Access denied for user 'user9'@'localhost' (using password: YES)
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+Caused by: java.sql.SQLException: Access denied for user 'user9'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+2026-03-04 19:24:18 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-04 19:24:18 INFO  gr.aueb.cf.eduapp.EduAppApplication - Starting EduAppApplication using Java 21.0.8 with PID 29620 (C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main started by user in C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro)
+ 2026-03-04 19:24:18 INFO  gr.aueb.cf.eduapp.EduAppApplication - The following 1 profile is active: "dev"
+ 2026-03-04 19:24:18 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-04 19:24:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 7 JPA repository interfaces.
+ 2026-03-04 19:24:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-04 19:24:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1424 ms
+ 2026-03-04 19:24:21 ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\authentication\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in gr.aueb.cf.eduapp.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+ 2026-03-04 19:24:21 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+ 2026-03-04 19:24:21 ERROR o.s.boot.SpringApplication - Application run failed
+ org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:170)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:147)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\authentication\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in gr.aueb.cf.eduapp.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main\gr\aueb\cf\eduapp\authentication\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'userRepository' defined in gr.aueb.cf.eduapp.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in gr.aueb.cf.eduapp.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Cannot resolve reference to bean 'jpaSharedEM_entityManagerFactory' while setting bean property 'entityManager'
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaSharedEM_entityManagerFactory': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:377)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: Access denied for user 'user9'@'localhost' (using password: YES)
+-----------------------------------------------------------------------------------------------------------
+SQL State  : 28000
+Error Code : 1045
+Message    : Access denied for user 'user9'@'localhost' (using password: YES)
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Access denied for user 'user9'@'localhost' (using password: YES)
+-----------------------------------------------------------------------------------------------------------
+SQL State  : 28000
+Error Code : 1045
+Message    : Access denied for user 'user9'@'localhost' (using password: YES)
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:71)
+Caused by: java.sql.SQLException: Access denied for user 'user9'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+2026-03-04 19:26:19 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+ 2026-03-04 19:26:19 INFO  gr.aueb.cf.eduapp.EduAppApplication - Starting EduAppApplication using Java 21.0.8 with PID 25700 (C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro\build\classes\java\main started by user in C:\Users\user\Desktop\CODING_FACTORY\Java\Projects\edu-rest-app-pro)
+ 2026-03-04 19:26:19 INFO  gr.aueb.cf.eduapp.EduAppApplication - The following 1 profile is active: "dev"
+ 2026-03-04 19:26:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2026-03-04 19:26:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 7 JPA repository interfaces.
+ 2026-03-04 19:26:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+ 2026-03-04 19:26:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1416 ms
+ 2026-03-04 19:26:22 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/schoolapp9csrpro?useSSL=true&serverTimezone=UTC (MySQL 8.0)
+ 2026-03-04 19:26:22 INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.029s)
+ 2026-03-04 19:26:22 INFO  o.f.core.internal.command.DbMigrate - Current version of schema `schoolapp9csrpro`: 4
+ 2026-03-04 19:26:22 INFO  o.f.core.internal.command.DbMigrate - Schema `schoolapp9csrpro` is up to date. No migration necessary.
+ 2026-03-04 19:26:22 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.42.Final
+ 2026-03-04 19:26:22 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+ 2026-03-04 19:26:22 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+ 2026-03-04 19:26:22 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.44
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+ 2026-03-04 19:26:23 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+ 2026-03-04 19:26:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2026-03-04 19:26:24 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+ 2026-03-04 19:26:24 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+ 2026-03-04 19:26:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+ 2026-03-04 19:26:24 INFO  gr.aueb.cf.eduapp.EduAppApplication - Started EduAppApplication in 5.336 seconds (process running for 5.687)
+ 2026-03-04 19:26:41 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2026-03-04 19:26:41 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+ 2026-03-04 19:26:41 INFO  g.a.c.e.service.TeacherServiceImpl - Teacher with vat=120456788 saved successfully.
+ 
